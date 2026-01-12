@@ -31,22 +31,37 @@
 **中文：** 展示了系统如何通过实时监测机械臂关节角度（精度 ），在完成袋子展开后自动触发从模仿学习到视觉伺服抓取的平滑转换 。
 **English:** Demonstrates the smooth transition from Stage 1 (imitation learning) to Stage 2 (visual servoing) triggered by real-time joint angle monitoring with  accuracy.
 
-2. **全流程演示 (Full Task: From Unfolding to Placement)**
+https://github.com/user-attachments/assets/69d3a051-84e8-462a-a789-3946e666350d
+
+https://github.com/user-attachments/assets/8f990473-794e-4285-8830-a99c92ead5f1
+
+https://github.com/user-attachments/assets/f9e5c091-d8fa-4fea-9f2c-61677d207b16
+
+3. **全流程演示 (Full Task: From Unfolding to Placement)**
 **中文：** 演示了从双臂协作展开反光塑料袋到最终精准放入物品（如泰迪熊）的完整闭环控制过程 。
 **English:** Illustrates the complete closed-loop control from dual-arm unfolding of reflective bags to the precise placement of objects (e.g., a teddy bear).
 
-3. **多样化颜色适配 (Color Generalization)**
+https://github.com/user-attachments/assets/af45aed8-5e69-463d-8f5b-8f0b0d240590
+
+5. **多样化颜色适配 (Color Generalization)**
 **中文：** 验证了视觉增强算法对不同颜色、高反光柔性物体的稳健性，通过参数优化显著抑制了光影干扰 。
 **English:** Validates the robustness of visual enhancement algorithms across different colors and highly reflective flexible objects by suppressing lighting interference.
 
-4. **通用性测试：刚性物体抓取 (Generalization: Rigid Object Grasping)**
+https://github.com/user-attachments/assets/e1748f5d-90e4-4696-8075-e0af6c7c4764
+
+https://github.com/user-attachments/assets/f99730ad-c81a-4c68-baa6-01464b582d3d
+
+7. **通用性测试：刚性物体抓取 (Generalization: Rigid Object Grasping)**
 **中文：** 证明了该框架在处理非结构化柔性物体的同时，同样具备对普通刚性物体的稳定抓取能力 。
 **English:** Demonstrates that the framework maintains stable grasping capabilities for rigid objects while excelling at unstructured flexible object manipulation.
 
-5. **数据采集过程 (Data Collection & Training)**
+https://github.com/user-attachments/assets/deb15ee3-3496-4c6b-a028-7a19e1695124
+
+9. **数据采集过程 (Data Collection & Training)**
 **中文：** 展示了用于训练 Transformer 行为克隆模型的专家演示数据采集过程，为模仿学习提供高质量输入 。
 **English:** Shows the expert demonstration data collection process used to train the Transformer-based behavioral cloning model.
 
+https://github.com/user-attachments/assets/b6c3feca-4183-4a53-904e-61421c79edec
 
 ---
 
