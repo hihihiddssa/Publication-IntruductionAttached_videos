@@ -1,68 +1,70 @@
-# Attached-videos-demo-of-my-publication-FlexGrasp-Visual-Collaboration
-中文： 基于视觉增强与多阶段协作的柔性物体（如塑料袋）抓取框架。相比 Mobile ALOHA 成功率提升 35%。 English: A flexible object grasping framework (e.g., plastic bags) combining visual enhancement and multi-stage collaboration. Improves success rate by 35% over Mobile ALOHA.
-# Research On Flexible Object Grasping Method Based on Visual Enhancement and Multi-Stage Collaboration
-# 基于视觉增强与多阶段协作的柔性物体抓取研究
+针对您的论文《基于视觉增强与多阶段协作的柔性物体抓取研究》，我为您重新撰写了 GitHub 仓库的 **README.md**。
 
-[![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-[![Venue](https://img.shields.io/badge/Venue-ICBIR%202025-blue)](https://www.elsevier.com/locate/procedia)
-
-[cite_start]This repository contains the implementation and demo for the paper: **"Research On Flexible Object Grasping Method Based on Visual Enhancement and Multi-Stage Collaboration"**, published in *Procedia Computer Science 271 (2025) 7-13*[cite: 5, 9, 10].
+该版本强化了论文中提到的 **35% 成功率提升** 以及 **“感知-决策-执行”闭环控制架构** ，并在视频展示区域留出了位置。
 
 ---
 
-## 🎥 Demo Video / 演示视频
+# README.md
 
-[Drop your demo video file here]
+## 📌 项目简介 | Project Introduction
 
-> [cite_start]**Highlights:** The video demonstrates the transition from **Stage 1 (Unfolding)** using imitation learning to **Stage 2 (Grasping)** using visual localization[cite: 81, 82, 83].
+**中文：** 本项目针对高反光、低纹理的柔性物体（如透明塑料袋）抓取难题，提出了一套结合视觉增强与多阶段协作的机器人抓取框架 。通过“展开-抓取”的精准阶段转换，显著提升了服务机器人在复杂环境下的操作稳定性 。
 
----
-
-## ✨ Key Features / 核心功能
-
-* [cite_start]**Visual Enhancement Pipeline / 视觉增强流水线:** * Addresses challenges of reflective, low-texture flexible objects[cite: 14].
-    * [cite_start]Includes contrast adjustment, Gaussian smoothing, Canny edge detection, and morphological operations[cite: 112, 125].
-    * [cite_start]Maintains over 90% edge detection accuracy[cite: 131].
-* **Multi-Stage Collaboration / 多阶段协作:**
-    * [cite_start]**Stage 1:** Transformer-based behavioral cloning for stable unfolding[cite: 82].
-    * [cite_start]**Stage 2:** YOLO v8-based detection and 3D coordinate mapping for precise grasping[cite: 83, 98].
-* **Phase Transition Mechanism / 阶段转换机制:**
-    * [cite_start]A three-level trigger system based on real-time joint angle data ($\pm0.01rad$ accuracy)[cite: 84, 85].
-    * [cite_start]Ensures accurate "unfolding-to-grasping" transitions[cite: 15].
+**English:** This project addresses the challenge of grasping reflective, low-texture flexible objects (e.g., plastic bags) by proposing a framework that combines visual enhancement and multi-stage collaboration. By enabling accurate "unfolding-grasping" transitions, it significantly improves the stability of service robots in complex scenarios.
 
 ---
 
-## 📊 Performance / 实验表现
+## 🎥 演示视频 | Demo Video
 
-[cite_start]Compared to the traditional Mobile ALOHA framework, our method significantly improves the success rate in handling transparent plastic bags[cite: 16, 160]:
+### 视频简述 | Video Description
 
-| Method | Success Rate | 95% CI |
-| :--- | :---: | :---: |
-| [cite_start]Mobile ALOHA [cite: 173] | 48% | ±9.8% |
-| [cite_start]**Proposed Framework [cite: 173]** | **83%** | **±7.37%** |
+* 
+**中文：** 视频展示了双臂协作系统如何先通过模仿学习算法展开反光的黄色塑料袋 ，随后触发阶段转换机制 ，利用视觉增强算法（Canny 边缘检测、形态学闭运算等）精准定位并完成抓取 。
 
----
 
-## 🛠️ System Setup / 系统设置
+* 
+**English:** The video demonstrates how the dual-arm system first unfolds a reflective yellow plastic bag using imitation learning , then triggers the phase transition mechanism to accurately locate and grasp the object using visual enhancement algorithms (Canny edge detection, morphological closing, etc.).
 
-* [cite_start]**Robots:** 2 × 6-DOF DOBOT Nova5 robotic arms[cite: 153].
-* [cite_start]**Sensors:** 4 × Intel RealSense D405 cameras[cite: 154].
-* [cite_start]**Grippers:** 3D-printed two-finger soft rubber grippers[cite: 117, 153].
-* [cite_start]**Base:** EPP foam anti-vibration base[cite: 122, 153].
+
 
 ---
 
-## 📝 Citation / 引用
+## 🚀 核心亮点 | Key Contributions
 
-If you find this work helpful, please cite our paper:
+* 
+**多阶段协作框架 (Multi-Stage Collaboration):** 将任务分解为基于模仿学习的“展开阶段”和基于视觉伺服的“抓取阶段” 。
 
-```bibtex
-@article{aga2025research,
-  title={Research On Flexible Object Grasping Method Based on Visual Enhancement and Multi-Stage Collaboration},
-  author={Aga, Cila and Cao, Zhijun and Chi, Junchen and Liu, Jin and Wang, Chaoqun and Fu, Tianyu and Song, Rui},
-  journal={Procedia Computer Science},
-  volume={271},
-  pages={7--13},
-  year={2025},
-  publisher={Elsevier}
-}
+
+* 
+**视觉增强流水线 (Visual Enhancement Pipeline):** 通过高斯平滑、对比度调整和形态学处理，将边缘检测准确率提升至 90% 以上 。
+
+
+* 
+**精准转换机制 (Phase Transition):** 采用三级触发系统，实时监控机械臂关节数据 ( 精度)，确保各阶段无缝衔接 。
+
+
+* 
+**性能提升 (Performance Boost):** 实验证明，本框架的抓取成功率达到 **83%**，较传统方法提升了 **35%** 。
+
+
+
+---
+
+## 🛠️ 系统构成 | System Setup
+
+* 
+**机械臂 (Robots):** 2 × DOBOT Nova5 (6-DOF).
+
+
+* 
+**传感器 (Sensors):** 4 × Intel RealSense D405 深度相机.
+
+
+* 
+**末端执行器 (Gripper):** 3D 打印双指软胶抓取手.
+
+
+* 
+**控制算法 (Algorithms):** Transformer-based Behavioral Cloning & YOLO v8.
+
+
