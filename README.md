@@ -17,7 +17,35 @@
 **中文：** 视频展示了双臂协作系统如何先通过模仿学习算法展开反光的黄色塑料袋 ，随后触发阶段转换机制 ，利用视觉增强算法（Canny 边缘检测、形态学闭运算等）精准定位并完成抓取 。
   
 **English:** The video demonstrates how the dual-arm system first unfolds a reflective yellow plastic bag using imitation learning , then triggers the phase transition mechanism to accurately locate and grasp the object using visual enhancement algorithms (Canny edge detection, morphological closing, etc.).
+根据您提供的视频素材内容，我为您优化了 GitHub 仓库的 **README.md** 结构。我将视频描述分为五个部分，以便访问者能够清晰地理解您论文中的核心贡献，特别是**多阶段协作框架** 和**视觉增强算法**的有效性 。
 
+---
+
+## 🎥 演示视频 | Demo Video
+
+[在这里拖拽上传您的视频文件]
+
+### 视频章节说明 | Video Chapters
+
+1. **阶段 1 与阶段 2 转换 (Phase Transition between Stage 1 & 2)**
+**中文：** 展示了系统如何通过实时监测机械臂关节角度（精度 ），在完成袋子展开后自动触发从模仿学习到视觉伺服抓取的平滑转换 。
+**English:** Demonstrates the smooth transition from Stage 1 (imitation learning) to Stage 2 (visual servoing) triggered by real-time joint angle monitoring with  accuracy.
+
+2. **全流程演示 (Full Task: From Unfolding to Placement)**
+**中文：** 演示了从双臂协作展开反光塑料袋到最终精准放入物品（如泰迪熊）的完整闭环控制过程 。
+**English:** Illustrates the complete closed-loop control from dual-arm unfolding of reflective bags to the precise placement of objects (e.g., a teddy bear).
+
+3. **多样化颜色适配 (Color Generalization)**
+**中文：** 验证了视觉增强算法对不同颜色、高反光柔性物体的稳健性，通过参数优化显著抑制了光影干扰 。
+**English:** Validates the robustness of visual enhancement algorithms across different colors and highly reflective flexible objects by suppressing lighting interference.
+
+4. **通用性测试：刚性物体抓取 (Generalization: Rigid Object Grasping)**
+**中文：** 证明了该框架在处理非结构化柔性物体的同时，同样具备对普通刚性物体的稳定抓取能力 。
+**English:** Demonstrates that the framework maintains stable grasping capabilities for rigid objects while excelling at unstructured flexible object manipulation.
+
+5. **数据采集过程 (Data Collection & Training)**
+**中文：** 展示了用于训练 Transformer 行为克隆模型的专家演示数据采集过程，为模仿学习提供高质量输入 。
+**English:** Shows the expert demonstration data collection process used to train the Transformer-based behavioral cloning model.
 
 
 ---
